@@ -1,0 +1,18 @@
+'use strict';
+
+var express = require('express');
+var path = require('path');
+
+var app = express();
+
+app.use(express.static(__dirname));
+// app.use(express.static('index.html'))
+
+// app.post('/', function(req, res) {
+
+// })
+
+
+app.listen(3000);
+console.log('Repost Checker running on :3000');
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2luZGV4LmpzIl0sIm5hbWVzIjpbImV4cHJlc3MiLCJyZXF1aXJlIiwicGF0aCIsImFwcCIsInVzZSIsInN0YXRpYyIsIl9fZGlybmFtZSIsImxpc3RlbiIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBTUEsVUFBVUMsUUFBUSxTQUFSLENBQWhCO0FBQ0EsSUFBTUMsT0FBT0QsUUFBUSxNQUFSLENBQWI7O0FBRUEsSUFBTUUsTUFBTUgsU0FBWjs7QUFFQUcsSUFBSUMsR0FBSixDQUFRSixRQUFRSyxNQUFSLENBQWVDLFNBQWYsQ0FBUjtBQUNBOztBQUVBOztBQUVBOzs7QUFJQUgsSUFBSUksTUFBSixDQUFXLElBQVg7QUFDQUMsUUFBUUMsR0FBUixDQUFZLGlDQUFaIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgZXhwcmVzcyA9IHJlcXVpcmUoJ2V4cHJlc3MnKVxuY29uc3QgcGF0aCA9IHJlcXVpcmUoJ3BhdGgnKVxuXG5jb25zdCBhcHAgPSBleHByZXNzKClcblxuYXBwLnVzZShleHByZXNzLnN0YXRpYyhfX2Rpcm5hbWUpKVxuLy8gYXBwLnVzZShleHByZXNzLnN0YXRpYygnaW5kZXguaHRtbCcpKVxuXG4vLyBhcHAucG9zdCgnLycsIGZ1bmN0aW9uKHJlcSwgcmVzKSB7XG5cdFxuLy8gfSlcblxuXG5cbmFwcC5saXN0ZW4oMzAwMClcbmNvbnNvbGUubG9nKCdSZXBvc3QgQ2hlY2tlciBydW5uaW5nIG9uIDozMDAwJyk7Il19

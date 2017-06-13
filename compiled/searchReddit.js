@@ -1,0 +1,23 @@
+'use strict';
+
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+var searchReddit = function searchReddit(_ref, callback) {
+	_objectDestructuringEmpty(_ref);
+
+	$.get('https://www.reddit.com/r/pics.jsonp', {}).done(function (_ref2) {
+		var items = _ref2.items;
+
+		console.log('is this getting called' + data);
+		if (callback) {
+			callback(items);
+		}
+	}).fail(function (_ref3) {
+		var response = _ref3.response;
+
+		console.error(response);
+	});
+};
+
+window.searchReddit = searchReddit;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NlYXJjaFJlZGRpdC5qcyJdLCJuYW1lcyI6WyJzZWFyY2hSZWRkaXQiLCJjYWxsYmFjayIsIiQiLCJnZXQiLCJkb25lIiwiaXRlbXMiLCJjb25zb2xlIiwibG9nIiwiZGF0YSIsImZhaWwiLCJyZXNwb25zZSIsImVycm9yIiwid2luZG93Il0sIm1hcHBpbmdzIjoiOzs7O0FBQUEsSUFBSUEsZUFBZSxTQUFmQSxZQUFlLE9BQUtDLFFBQUwsRUFBa0I7QUFBQTs7QUFDcENDLEdBQUVDLEdBQUYsQ0FBTSxxQ0FBTixFQUE2QyxFQUE3QyxFQUdDQyxJQUhELENBR00saUJBQWE7QUFBQSxNQUFYQyxLQUFXLFNBQVhBLEtBQVc7O0FBQ2xCQyxVQUFRQyxHQUFSLENBQVksMkJBQTJCQyxJQUF2QztBQUNBLE1BQUdQLFFBQUgsRUFBYTtBQUNaQSxZQUFTSSxLQUFUO0FBRUE7QUFDRCxFQVRELEVBVUNJLElBVkQsQ0FVTSxpQkFBZ0I7QUFBQSxNQUFkQyxRQUFjLFNBQWRBLFFBQWM7O0FBQ2xCSixVQUFRSyxLQUFSLENBQWNELFFBQWQ7QUFDSCxFQVpEO0FBYUEsQ0FkRDs7QUFnQkFFLE9BQU9aLFlBQVAsR0FBc0JBLFlBQXRCIiwiZmlsZSI6InNlYXJjaFJlZGRpdC5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBzZWFyY2hSZWRkaXQgPSAoe30sIGNhbGxiYWNrKSA9PiB7XG5cdCQuZ2V0KCdodHRwczovL3d3dy5yZWRkaXQuY29tL3IvcGljcy5qc29ucCcsIHtcblxuXHR9KVxuXHQuZG9uZSgoe2l0ZW1zfSkgPT4ge1xuXHRcdGNvbnNvbGUubG9nKCdpcyB0aGlzIGdldHRpbmcgY2FsbGVkJyArIGRhdGEpXG5cdFx0aWYoY2FsbGJhY2spIHtcblx0XHRcdGNhbGxiYWNrKGl0ZW1zKVxuXG5cdFx0fVxuXHR9KVxuXHQuZmFpbCgoe3Jlc3BvbnNlfSkgPT4ge1xuICAgICBjb25zb2xlLmVycm9yKHJlc3BvbnNlKVxuXHR9KVxufVxuXG53aW5kb3cuc2VhcmNoUmVkZGl0ID0gc2VhcmNoUmVkZGl0O1xuIl19
