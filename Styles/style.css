@@ -31,5 +31,11 @@ p {
 	font-family: 'Kavoon', cursive;
 	color: red;
 	margin-top: 25px;
-
+}
+#OC {
+	font-size: 40px;
+	font-family: 'Kavoon', cursive;
+	color: green;
+	margin-top: 25px;
+	text-align: center;
 }

@@ -47,7 +47,14 @@ class App extends React.Component {
               counterColor: 'red',
               s: ''
             })
-          }
+          } else {
+              var div = document.createElement('div');
+              div.id='OC'
+              var niceOC = document.createTextNode('NICE OC!!')
+              div.appendChild(niceOC)
+              document.body.appendChild(div);
+            }
+          
         })
   } 
   
@@ -81,7 +88,7 @@ class App extends React.Component {
 
           <p>Your link has been submitted <span className={this.state.counterColor}>{this.state.counter}</span> time{this.state.s}</p>
 
-          <OCnote searchReddit={this.searchReddit.bind(this)} counter={this.state.counter}/>
+          <OCnote id="OCnote"searchReddit={this.searchReddit.bind(this)} counter={this.state.counter}/>
         </div>
       </div>
          
